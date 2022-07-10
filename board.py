@@ -6,6 +6,7 @@ from constants import RED, WIN, BLACK,WHITE, ROWS, COLS, RADIUS, WIDTH, HEIGHT
 class Board:
     def __init__(self):
         self.board = []
+        self.create_board()
 
     def draw_board(self, win):
         win.fill(BLACK)
