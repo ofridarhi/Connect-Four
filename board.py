@@ -24,3 +24,12 @@ class Board:
             for col in range(COLS):
                 self.board[row].append(0)
 
+    def place_piece(self,piece,row,col,win):
+        #piece we want to move, piece we want to move to
+        pygame.draw.circle(win, self.color, (self.board[row][col]), RADIUS)
+        #self.board[piece.row][piece.col], self.board[row][col] = self.board[row][col], self.board[piece.row][piece.col]
+
+
+    def get_piece(self,row,col):
+        return self.board[row][col]
+

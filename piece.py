@@ -18,4 +18,4 @@ class Piece:
         pygame.draw.circle(win, self.color, (self.x, self.y), RADIUS)
 
     def __repr__(self):
-        return  str(self.color)
+        return str(self.color)
