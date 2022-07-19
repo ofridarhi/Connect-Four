@@ -69,6 +69,21 @@ class Board:
                             for third_neighbor_circle in circles:
                                 if third_neighbor_circle.color == sec_neighbor_circle.color and third_neighbor_circle.y == sec_neighbor_circle.y and third_neighbor_circle.x == sec_neighbor_circle.x + dis_between_circles:
                                     print("red wins")
+                #diaginal to the left
+                elif neighbor_circle.color == circle.color and neighbor_circle.x == circle.x + dis_between_circles and neighbor_circle.y == circle.y + dis_between_circles:
+                    for sec_neighbor_circle in circles:
+                        if sec_neighbor_circle.color == neighbor_circle.color and sec_neighbor_circle.x == neighbor_circle.x + dis_between_circles and sec_neighbor_circle.y == neighbor_circle.y + dis_between_circles:
+                            for third_neighbor_circle in circles:
+                                if third_neighbor_circle.color == sec_neighbor_circle.color and third_neighbor_circle.x == sec_neighbor_circle.x +dis_between_circles and third_neighbor_circle.y == sec_neighbor_circle.y + dis_between_circles:
+                                    print("red wins")
+
+                # diaginal to the right
+                elif neighbor_circle.color == circle.color and neighbor_circle.x == circle.x - dis_between_circles and neighbor_circle.y == circle.y + dis_between_circles:
+                    for sec_neighbor_circle in circles:
+                        if sec_neighbor_circle.color == neighbor_circle.color and sec_neighbor_circle.x == neighbor_circle.x - dis_between_circles and sec_neighbor_circle.y == neighbor_circle.y + dis_between_circles:
+                            for third_neighbor_circle in circles:
+                                if third_neighbor_circle.color == sec_neighbor_circle.color and third_neighbor_circle.x == sec_neighbor_circle.x - dis_between_circles and third_neighbor_circle.y == sec_neighbor_circle.y + dis_between_circles:
+                                    print("red wins")
 
 
 
@@ -90,3 +105,18 @@ class Board:
                                 if third_neighbor_circle.color == sec_neighbor_circle.color and third_neighbor_circle.y == sec_neighbor_circle.y and third_neighbor_circle.x == sec_neighbor_circle.x + dis_between_circles:
                                     print("green wins")
 
+                #diaginal to the left
+                elif neighbor_circle.color == circle.color and neighbor_circle.x == circle.x + dis_between_circles and neighbor_circle.y == circle.y + dis_between_circles:
+                    for sec_neighbor_circle in circles:
+                        if sec_neighbor_circle.color == neighbor_circle.color and sec_neighbor_circle.x == neighbor_circle.x + dis_between_circles and sec_neighbor_circle.y == neighbor_circle.y + dis_between_circles:
+                            for third_neighbor_circle in circles:
+                                if third_neighbor_circle.color == sec_neighbor_circle.color and third_neighbor_circle.x == sec_neighbor_circle.x +dis_between_circles and third_neighbor_circle.y == sec_neighbor_circle.y + dis_between_circles:
+                                    print("green wins")
+
+                # diaginal to the right
+                elif neighbor_circle.color == circle.color and neighbor_circle.x == circle.x - dis_between_circles and neighbor_circle.y == circle.y + dis_between_circles:
+                    for sec_neighbor_circle in circles:
+                        if sec_neighbor_circle.color == neighbor_circle.color and sec_neighbor_circle.x == neighbor_circle.x - dis_between_circles and sec_neighbor_circle.y == neighbor_circle.y + dis_between_circles:
+                            for third_neighbor_circle in circles:
+                                if third_neighbor_circle.color == sec_neighbor_circle.color and third_neighbor_circle.x == sec_neighbor_circle.x - dis_between_circles and third_neighbor_circle.y == sec_neighbor_circle.y + dis_between_circles:
+                                    print("green wins")
