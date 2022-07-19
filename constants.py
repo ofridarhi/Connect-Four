@@ -1,0 +1,11 @@
+WIDTH, HEIGHT = 800, 800
+RED = (255,0,0)
+BLACK = (0,0,0)
+WHITE = (255,255,255)
+GREEN = (0,255,0)
+RED = (255,0,0)
+RADIUS = 40
+GAP = 15
+startx = round((WIDTH - (RADIUS * 2 + GAP)* 7) / 2)
+starty = 150
+COLORS = [RED,GREEN]
