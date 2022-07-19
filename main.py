@@ -64,6 +64,7 @@ def main():
                                 circle.fill(current_color)
                                 pygame.draw.circle(WIN, circle.color, (circle.x, circle.y), RADIUS, 50)
                                 turn_handler.update_turn()
+                            board.is_winning(circle)
                             pygame.display.update()
 
                             # Board.change_turn(board,color)
